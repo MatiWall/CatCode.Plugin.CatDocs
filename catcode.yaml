@@ -1,0 +1,22 @@
+kind: Component
+metadata:
+  description: Backend for catcode.
+  system: catcode
+  application: backend
+  deployableUnit: catdocs
+  version: 0.1.9
+  tags:
+  - python
+  - backend
+  links:
+  - title: Telemetry
+    icon: grafana
+    url: http://grafana.mw.local/
+  annotations:
+    catcode.io/dependencies: true
+spec:
+  type: service
+  lifecycle: development
+  owner: mw
+  dependencies:
+  - catcode.backend.coreapi

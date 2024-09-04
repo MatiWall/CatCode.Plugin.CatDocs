@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "catdocs"
+version = "0.1.0"
+description = ""
+authors = ["Matias Wallenius <MatiWall@live.dk>"]
+readme = "README.md"
+
+[[tool.poetry.source]]
+name = "private"
+url = "http://pypi.mw.local"
+priority = "primary"
+
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "supplemental"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110.0"
+uvicorn = "^0.27.1"
+pydantic = "^2.6.3"
+httpx = "^0.27.0"
+extensions-opentelemetry = "0.1.1"
+extensions-configuration = "^0.1.2"
+mkdocs-material = "^9.5.13"
+mkdocstrings = "^0.24.1"
+event-tools = "0.1.2"
+extensions-rabbitmq = "^0.1.0"
+messaging-tools = "^0.1.0"
+mkdocs = "^1.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

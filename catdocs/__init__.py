@@ -1,0 +1,1 @@
+import catdocs.core.events.handler_registration
